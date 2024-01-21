@@ -1,6 +1,4 @@
-/* WeatherApp.css */
 
-/* Container styling */
 .weather-app-container {
     max-width: 800px;
     margin: 0 auto;
@@ -8,13 +6,11 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* Title styling */
   h1 {
     text-align: center;
     color: rgb(17, 16, 17);
   }
   
-  /* City selection styling */
   .city-select-container {
     margin-bottom: 20px;
   }
@@ -28,7 +24,6 @@
     font-size: 16px;
   }
   
-  /* Weather data styling */
   .weather-data-container {
     background-color: #a39ea0;
     padding: 20px;
@@ -41,7 +36,6 @@
     margin-bottom: 10px;
   }
   
-  /* Chart styling */
   .recharts-wrapper {
     margin-top: 0px;
     display: flex;

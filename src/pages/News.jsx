@@ -1,4 +1,3 @@
-// News.jsx
 import React, { useState, useEffect } from 'react';
 
 const News = () => {
@@ -15,7 +14,7 @@ const News = () => {
     { value: 'sports', label: 'スポーツ' },
     { value: 'technology', label: 'テクノロジー' },
   ];
-  const apiKey = '479c1102ee1f4bbd8aedbd2f7b9cc24f'; // ご自身のNews APIキーに置き換えてください
+  const apiKey = '479c1102ee1f4bbd8aedbd2f7b9cc24f';
 
   useEffect(() => {
     const fetchNews = async () => {

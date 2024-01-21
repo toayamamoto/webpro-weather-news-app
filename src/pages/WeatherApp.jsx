@@ -1,4 +1,3 @@
-// WeatherApp.js
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import './WeatherApp.css';
@@ -6,7 +5,7 @@ import './WeatherApp.css';
 const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [temperatureData, setTemperatureData] = useState([]);
-  const [selectedCity, setSelectedCity] = useState('Tokyo'); // 初期値としてTokyoを設定
+  const [selectedCity, setSelectedCity] = useState('Tokyo');
 
   useEffect(() => {
     const fetchWeatherData = async () => {
@@ -16,11 +15,10 @@ const WeatherApp = () => {
         setWeatherData(data);
 
         if (data.list) {
-          // 最初の24時間分の気温データを格納
           const temperatures = data.list
-            .slice(0, 8)  // 3時間ごとのデータなので8回分を取得 (8 * 3 = 24)
+            .slice(0, 8) 
             .map((forecast) => ({
-              time: forecast.dt_txt.split(' ')[1], // 時間のみを取得
+              time: forecast.dt_txt.split(' ')[1], 
               temperature: forecast.main.temp,
             }));
           setTemperatureData(temperatures);
