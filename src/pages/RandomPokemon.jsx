@@ -1,7 +1,5 @@
-// src/components/RandomPokemon.js
-
 import React, { useState, useEffect } from 'react';
-import './RandomPokemon.css'; // スタイルを追加
+import './RandomPokemon.css'; 
 
 const RandomPokemon = () => {
   const [pokemon, setPokemon] = useState(null);
